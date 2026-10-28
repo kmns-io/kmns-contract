@@ -1,0 +1,20 @@
+[package]
+name = "kmns-contract"
+version = "0.2.0"
+edition = "2021"
+authors = ["KMNS Authors <team@kmns.io>"]
+license = "Apache-2.0"
+description = "Typed KMNS validation contracts"
+repository = "https://github.com/kmns-io/kmns-contract"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+sha2 = "0.10"
+thiserror = "1.0"
+
+[dev-dependencies]
+
+[lints.rust]
+unsafe_code = "forbid"
